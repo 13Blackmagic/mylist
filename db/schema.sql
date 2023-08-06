@@ -18,7 +18,13 @@ CREATE TABLE mylist (
     PRIMARY KEY (mylist_id)
 );
 
+CREATE TABLE reson (
+    reson_id INT NOT NULL AUTO_INCREMENT,
+    reson_name VARCHAR(255) NOT NULL,
+    PRIMARY KEY (reson_id)
+);
+
 Show tables;
 SELECT "enemie" AS 'table', COUNT(*) AS 'rows' FROM 'enemie'
 SELECT "mylist" AS 'table', COUNT(*) AS 'rows' FROM 'mylist'
-SELECT "enemie_mylist" AS 'table', COUNT(*) AS 'rows' FROM 'enemie_mylist'
+SELECT "reson" AS 'table', COUNT(*) AS 'rows' FROM 'reson'

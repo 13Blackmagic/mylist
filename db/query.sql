@@ -18,6 +18,8 @@ LEFT JOIN enemie
 ON enemie.enemie_id = enemie.enemie_id
 ORDER BY 'My enemies' DESC;
 
+SELECT 
+
 SELECT * FROM enemie
 SELECT * FROM mylist
 SELECT * FROM enemie_mylist
