@@ -19,6 +19,20 @@ VALUES ('John', 'Stringham', 'd', '4'),
         ('Mo', 'Stringham', 'A', '1'),
         ('Paul', 'Sampson', 'D', '4');
 
+        INSERT INTO reson (reson_name)
+VALUES ('hate'),
+        ('love'),
+        ('money'),
+        ('power'),
+        ('revenge'),
+        ('fame'),
+        ('hate');
+        
+        SELECT * FROM enemie
+        SELECT * FROM mylist
+        SELECT * FROM enemie_mylist
+        SELECT * FROM reson
+
 
 
 
