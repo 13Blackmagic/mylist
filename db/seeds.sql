@@ -28,10 +28,10 @@ VALUES ('hate'),
         ('fame'),
         ('hate');
         
-        SELECT * FROM enemie
-        SELECT * FROM mylist
-        SELECT * FROM enemie_mylist
-        SELECT * FROM reson
+        SELECT * FROM enemie;
+        SELECT * FROM mylist;
+        SELECT * FROM enemie_mylist;
+        SELECT * FROM reson;
 
 
 

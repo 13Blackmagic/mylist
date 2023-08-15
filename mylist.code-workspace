@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Employees/Main/node_modules"
+		}
+	],
+	"settings": {}
+}

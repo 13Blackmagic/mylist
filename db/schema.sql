@@ -25,6 +25,6 @@ CREATE TABLE reson (
 );
 
 Show tables;
-SELECT "enemie" AS 'table', COUNT(*) AS 'rows' FROM 'enemie'
-SELECT "mylist" AS 'table', COUNT(*) AS 'rows' FROM 'mylist'
-SELECT "reson" AS 'table', COUNT(*) AS 'rows' FROM 'reson'
+SELECT "enemie" AS 'table', COUNT(*) AS 'rows' FROM 'enemie';
+SELECT "mylist" AS 'table', COUNT(*) AS 'rows' FROM 'mylist';
+SELECT "reson" AS 'table', COUNT(*) AS 'rows' FROM 'reson';
