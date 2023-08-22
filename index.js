@@ -106,4 +106,20 @@ const removeFromMyList = () => {
             })
         })
     })
+    const exit = () => {
+        console.log('Goodbye!');
+        process.exit();
+    };
+
+
+    const db = mysql.createConnection(
+        {
+          host: 'localhost',
+          user: 'root',
+          password: 'Starwars0819',
+          database: 'department_db'
+        },
+        console.log(`Connected to the database_db database.`)
+      );
+
 }
