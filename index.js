@@ -1,8 +1,10 @@
+// this is the main file that will run the application
 const path = require('path');
 const inquirer = require('inquirer');
 const mysql = require('mysql');
 const { response } = require('express');
 
+// this is the connection to the database
 const questions = [
     {   type: 'list',
         name: 'action',
@@ -16,7 +18,7 @@ const questions = [
         ]
     }
 ]
-
+// these are the questions that will be asked to the user
 run()
 function run() {
     inquirer.prompt(questions).then(answers => {
@@ -39,7 +41,7 @@ function run() {
         }
     })
 }
-
+// this is the switch case that will run the function based on the user's answer
 const viewAllEnemies = () => {
     const sql = `SELECT * FROM enemies`;
     db.query(sql, (err, response) => {
@@ -51,7 +53,7 @@ const viewAllEnemies = () => {
     console.table(result);
     run();
 }
-
+// this is the function that will display all the enemies in the database
 const viewMyList = () => {
     const sql = `SELECT * FROM mylist`;
     db.query(sql, (err, response) => {
@@ -61,7 +63,7 @@ const viewMyList = () => {
     }
     )
 }
-
+// this is how to add an enemy to the user's list
 const addToMyList = () => {
     const sql = `SELECT * FROM enemies`;
     db.query(sql, (err, response) => {
@@ -83,7 +85,7 @@ const addToMyList = () => {
         })
     })
 }
-
+// this is how to remove an enemy from the user's list
 const removeFromMyList = () => {
     const sql = `SELECT * FROM mylist`;
     db.query(sql, (err, response) => {
